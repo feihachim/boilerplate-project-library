@@ -9,7 +9,7 @@ const apiRoutes = require("./routes/api.js");
 const fccTestingRoutes = require("./routes/fcctesting.js");
 const runner = require("./test-runner");
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.DB);
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error"));
