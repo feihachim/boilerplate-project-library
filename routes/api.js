@@ -102,7 +102,7 @@ module.exports = function (app) {
           }
         })
         .catch((error) => {
-          res.send({ error: error });
+          res.send("no book exists");
         });
     })
 
@@ -124,7 +124,7 @@ module.exports = function (app) {
           }
         })
         .catch((error) => {
-          res.send({ error: error });
+          res.send("no book exists");
         });
     });
 };
